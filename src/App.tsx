@@ -5,7 +5,7 @@ import SkillsShowcase from "./pages/SkillsShowcase/SkillsShowcase";
 function App() {
   return (
     <>
-      <SkillsShowcase />
+      <Hero />
     </>
   );
 }

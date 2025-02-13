@@ -44,9 +44,10 @@ const SkillsShowcase = () => {
             work or for personal projects.
           </p>
           <p>
-            It is mostly a collection of skills in the web development
-            department + dystributed systems tools and knowledge applied to
-            micro-frondends.
+            It is mostly a collection of skills in the
+            <span className="italic"> web development </span>department +
+            <span className="italic"> dystributed systems </span>
+            tools and knowledge applied to micro-frondends.
           </p>
         </div>
         <div className="grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 text-xs sm:text-base cursor-pointer">

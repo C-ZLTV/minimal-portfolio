@@ -1,27 +1,43 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "../../components/Container/Container";
+import { stagger, motion } from "motion/react";
+import { animate } from "motion";
 
 const Hero = () => {
+  useEffect(() => {
+    animate(
+      ".text",
+      { y: "-10px", opacity: 1 },
+      { delay: stagger(0.4), ease: "easeOut", duration: 0.4 }
+    );
+
+    animate(
+      ".button",
+      { filter: ["blur(4px)", "blur(0px)"] },
+      { delay: 2, ease: "easeOut", duration: 0.5 }
+    );
+  });
+
   return (
     <Container>
-      <div className="flex flex-col sm:flex-row sm:items-center justify-around min-h-dvh">
+      <div className="flex flex-col sm:flex-row items-center justify-around min-h-dvh">
         <section>
           <img
-            className="w-[100%] sm:w-[85%]"
+            className="w-[90%] sm:w-[85%]"
             src="src\assets\gameboy-no-bg.png"
             alt="computer"
           />
         </section>
-        <section className="flex flex-col items-end font-roboto">
+        <section className="self-end sm:self-center flex flex-col items-end font-roboto">
           <div>
-            <div>CRISTINA</div>
-            <div>ZLATOV</div>
-            <div>/WEB DEVELOPER/</div>
-            <div>MI</div>
-            <div className="pb-12">
-              EXP<span className="pl-12">2+</span>
+            <div className="text opacity-0">CRISTINA</div>
+            <div className="text opacity-0">ZLATOV</div>
+            <div className="text opacity-0">/WEB DEVELOPER/</div>
+            <div className="text opacity-0">MI</div>
+            <div className="text opacity-0">
+              Y/EXP<span className="pl-12">2+</span>
             </div>
-            <button className="hover:text-black cursor-pointer transition-all duration-150 ease-in-out">
+            <button className="button blur-xs hover:text-black cursor-pointer transition-all duration-150 ease-in-out py-12">
               LEARN MORE
             </button>
           </div>
