@@ -1,0 +1,164 @@
+{
+    "skills": [
+        {
+            "skill": "JavaScript",
+            "id": "111",
+            "acquisitionMethod": "work",
+            "builyWith": false,
+            "category": "programming language",
+            "importance": 1
+        },
+        {
+            "skill": "typescript",
+            "id": "222",
+            "acquisitionMethod": "personal projects",
+            "builyWith": true,
+            "category": "programming language",
+            "importance": 1
+        },
+        {
+            "skill": "react",
+            "id": "333",
+            "acquisitionMethod": "work",
+            "builyWith": true,
+            "category": "JS library",
+            "importance": 1
+        },
+        {
+            "skill": "redux",
+            "id": "444",
+            "acquisitionMethod": "work",
+            "builyWith": false,
+            "category": "JS library - state management",
+            "importance": 2
+        },
+        
+        {
+            "skill": "jest",
+            "id": "555",
+            "acquisitionMethod": "work",
+            "builyWith": true,
+            "category": "JS library - testing",
+            "importance": 2
+        },
+        {
+            "skill": "distributed systems",
+            "id": "666",
+            "acquisitionMethod": "work",
+            "builyWith": false,
+            "category": "distributed system architecture",
+            "importance": 1
+        },
+        {
+            "skill": "jira",
+            "id": "777",
+            "acquisitionMethod": "work",
+            "builyWith": false,
+            "category": "collaboration",
+            "importance": 3
+        },
+        {
+            "skill": "confluence",
+            "id": "666",
+            "acquisitionMethod": "work",
+            "builyWith": false,
+            "category": "documentation writing",
+            "importance": 3
+        },
+        {
+            "skill": "GCP",
+            "id": "888",
+            "acquisitionMethod": "work",
+            "builyWith": false,
+            "category": "distributed system architecture",
+            "importance": 3
+        },
+        {
+            "skill": "jenkins",
+            "id": "999",
+            "acquisitionMethod": "work",
+            "builyWith": false,
+            "category": "CI/CD",
+            "importance": 3
+        },
+        {
+            "skill": "CI/CD Development",
+            "id": "999",
+            "acquisitionMethod": "work",
+            "builyWith": false,
+            "category": "CI/CD",
+            "importance": 2
+        },
+        {
+            "skill": "REST API",
+            "id": "999",
+            "acquisitionMethod": "work",
+            "builyWith": false,
+            "category": "CI/CD",
+            "importance": 2
+        },
+        {
+            "skill": "kubernetes",
+            "id": "999",
+            "acquisitionMethod": "work",
+            "builyWith": false,
+            "category": "distributed system architecture",
+            "importance": 3
+        },
+        {
+            "skill": "bitbucket",
+            "id": "999",
+            "acquisitionMethod": "work",
+            "builyWith": false,
+            "category": "version managements",
+            "importance": 3
+        },
+        {
+            "skill": "sourcetree",
+            "id": "999",
+            "acquisitionMethod": "work",
+            "builyWith": false,
+            "category": "version managements",
+            "importance": 3
+        },
+        {
+            "skill": "framer motion",
+            "id": "999",
+            "acquisitionMethod": "personal projects",
+            "builyWith": true,
+            "category": "JS library - animation",
+            "importance": 2
+        },
+        {
+            "skill": "andt design",
+            "id": "999",
+            "acquisitionMethod": "work",
+            "builyWith": false,
+            "category": "JS library - UI components",
+            "importance": 2
+        },
+        {
+            "skill": "axios",
+            "id": "999",
+            "acquisitionMethod": "work",
+            "builyWith": false,
+            "category": "JS library - API Reference",
+            "importance": 2
+        },
+        {
+            "skill": "tailwind",
+            "id": "999",
+            "acquisitionMethod": "personal projects",
+            "builyWith": true,
+            "category": "css  library",
+            "importance": 2
+        }, {
+            "skill": "git",
+            "id": "999",
+            "acquisitionMethod": "work",
+            "builyWith": true,
+            "category": "version management",
+            "importance": 2
+        }
+    ]
+}
