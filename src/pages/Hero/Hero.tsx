@@ -2,8 +2,11 @@ import React, { useEffect } from "react";
 import Container from "../../components/Container/Container";
 import { stagger, motion } from "motion/react";
 import { animate } from "motion";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     animate(
       ".text",
@@ -21,10 +24,11 @@ const Hero = () => {
   return (
     <Container>
       <div className="flex flex-col sm:flex-row items-center justify-around min-h-dvh">
-        <section>
+        <section className="sm:basis-1/3">
           <img
-            className="w-[90%] sm:w-[85%]"
-            src="src\assets\gameboy-no-bg.png"
+            // width="600px"
+            loading="lazy"
+            src="src\assets\motherboard-scaled.PNG"
             alt="computer"
           />
         </section>
@@ -37,7 +41,10 @@ const Hero = () => {
             <div className="text opacity-0">
               Y/EXP<span className="pl-12">2+</span>
             </div>
-            <button className="button blur-xs hover:text-black cursor-pointer transition-all duration-150 ease-in-out py-12">
+            <button
+              onClick={() => navigate("/skills")}
+              className="button blur-xs hover:text-black cursor-pointer transition-all duration-150 ease-in-out py-12"
+            >
               LEARN MORE
             </button>
           </div>
