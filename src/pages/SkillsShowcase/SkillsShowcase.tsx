@@ -61,9 +61,9 @@ const SkillsShowcase = () => {
                     "rgba(0, 0, 0, 0.1)";
                 }}
                 className={`
-                  ${
-                    sizing[skill.importance]
-                  } relative flex flex-col justify-center items-center`}
+                  ${sizing[skill.importance]} 
+                  text-[#787878]
+                  relative flex flex-col justify-center items-center`}
               >
                 <motion.img
                   initial="initial"

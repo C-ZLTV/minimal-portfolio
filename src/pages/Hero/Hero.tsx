@@ -26,9 +26,9 @@ const Hero = () => {
       <div className="flex flex-col sm:flex-row items-center justify-around min-h-dvh">
         <section className="sm:basis-1/3">
           <img
-            // width="600px"
+            className="sm:w-[80%]"
             loading="lazy"
-            src="src\assets\motherboard-scaled.PNG"
+            src="src\assets\gameboy-no-bg.png"
             alt="computer"
           />
         </section>
