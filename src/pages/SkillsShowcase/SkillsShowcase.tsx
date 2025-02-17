@@ -36,7 +36,7 @@ const SkillsShowcase = () => {
           </button>
         </div>
       )}
-      <section>
+      <section className="pb-18 pt-8 md:pt-6 md:pb-32">
         <div className="md:flex justify-between pb-12">
           <div className="md:max-w-32">
             <h1 className="pt-6 text-3xl font-bold">LOOK THOUGH</h1>
@@ -45,7 +45,7 @@ const SkillsShowcase = () => {
               projects.
             </p>
             <p>
-              It is a collection of skills in the
+              Collection of skills in the
               <span className="text-[#787878]"> web development </span>
               department +
               <span className="text-[#787878]"> dystributed systems </span>
@@ -53,7 +53,7 @@ const SkillsShowcase = () => {
             </p>
           </div>
           <div>
-            <div className="grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 text-xs sm:text-base cursor-pointer pb-32">
+            <div className="grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 text-xs sm:text-base cursor-pointer">
               {data.skills.map((skill: Skill, index) => {
                 return (
                   <div
@@ -100,7 +100,13 @@ const SkillsShowcase = () => {
         </div>
       </section>
       <section>
-        <h2 className="pb-12 text-3xl font-bold">PROFESSIONAL EXPERIENCE</h2>
+        <h2 className="md:flex flex-col text-3xl font-bold">
+          <span>PROFESSIONAL</span> <span>EXPERIENCE</span>
+        </h2>
+        <p className="pt-4 pb-12">
+          Experienced in architecting, building, and maintaining frontend
+          distributed systems in complex banking environments
+        </p>
         <div className="sm:flex justify-around pb-32">
           <motion.div
             initial="initial"
@@ -117,7 +123,7 @@ const SkillsShowcase = () => {
                 },
               },
             }}
-            className="basis-1/3"
+            className="basis-1/3 pb-12"
           >
             <div className="pb-2">
               <img

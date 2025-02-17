@@ -55,7 +55,7 @@ const Hero = () => {
 
   return (
     <Container>
-      <div className="flex flex-col sm:flex-row items-center justify-around min-h-dvh">
+      <div className="pt-4 md:pt-0 flex flex-col sm:flex-row items-center justify-around min-h-dvh">
         <section className="sm:basis-1/3">
           <motion.img
             initial="initial"
