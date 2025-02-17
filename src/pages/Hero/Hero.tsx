@@ -72,7 +72,7 @@ const Hero = () => {
             <div className="text opacity-0">CRISTINA</div>
             <div className="text opacity-0">ZLATOV</div>
             <div className="text opacity-0">/WEB DEVELOPER/</div>
-            <div className="text opacity-0">MI</div>
+            <div className="text opacity-0">MI, ITALY</div>
             <div className="text opacity-0">
               Y/EXP<span className="pl-12">2+</span>
             </div>
@@ -91,7 +91,7 @@ const Hero = () => {
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-chevrons-left"
+                className="lucide lucide-chevrons-left"
               >
                 <path d="m11 17-5-5 5-5" />
                 <path d="m18 17-5-5 5-5" />

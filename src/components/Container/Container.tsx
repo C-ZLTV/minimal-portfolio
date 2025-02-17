@@ -5,11 +5,9 @@ interface ContainerProps {
   size?: string;
 }
 
-const Container: React.FC<ContainerProps> = ({ children, size = "lg" }) => {
+const Container: React.FC<ContainerProps> = ({ children, size = 10 }) => {
   return (
-    <div
-      className={`container mx-auto w-11/12 lg:max-w-screen-${size} font-mono`}
-    >
+    <div className={`container mx-auto w-11/12 lg:w-${size}/12 font-mono`}>
       {children}
     </div>
   );
