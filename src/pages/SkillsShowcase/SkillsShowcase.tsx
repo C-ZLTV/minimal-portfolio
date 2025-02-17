@@ -79,9 +79,9 @@ const SkillsShowcase = () => {
                           transition: {
                             repeat: Infinity,
                             repeatType: "mirror",
-                            duration: 2,
+                            duration: 1.8,
                             ease: easeInOut,
-                            delay: index * 0.5,
+                            delay: index * 0.35,
                           },
                         },
                       }}
@@ -106,7 +106,7 @@ const SkillsShowcase = () => {
             initial="initial"
             whileInView="animate"
             variants={{
-              initial: { opacity: 0.2, y: "10px" },
+              initial: { opacity: 0.3, y: "10px" },
               animate: {
                 y: "0px",
                 opacity: 1,
@@ -140,7 +140,7 @@ const SkillsShowcase = () => {
             initial="initial"
             whileInView="animate"
             variants={{
-              initial: { opacity: 0.2, y: "10px" },
+              initial: { opacity: 0.3, y: "10px" },
               animate: {
                 y: "0px",
                 opacity: 1,
