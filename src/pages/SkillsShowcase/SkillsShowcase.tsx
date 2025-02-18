@@ -66,7 +66,7 @@ const SkillsShowcase = () => {
                   className={`
                       ${sizing[skill.importance]}
                       text-[#787878]
-                      relative flex flex-col justify-center items-center`}
+                      relative flex flex-col justify-center items-center hover:text-[#3d3d3d] transition-all`}
                 >
                   <motion.img
                     initial="initial"
@@ -86,6 +86,7 @@ const SkillsShowcase = () => {
                     }}
                     src="src\assets\drop.png"
                     width="100%"
+                    className="hover:scale-120 transition-all"
                   ></motion.img>
                   <div className="text-center">
                     {skill.skill.toLocaleUpperCase()}
