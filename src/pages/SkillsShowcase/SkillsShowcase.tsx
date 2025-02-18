@@ -36,78 +36,78 @@ const SkillsShowcase = () => {
           </button>
         </div>
       )}
-      <section className="pb-18 pt-8 md:pt-6 md:pb-32">
-        <div className="md:flex justify-between pb-12">
-          <div className="md:max-w-32">
-            <h1 className="pt-6 text-3xl font-bold">LOOK THOUGH</h1>
-            <p className="py-4">
-              Technologies I have worked closely with, for work or for personal
-              projects.
-            </p>
-            <p>
-              Collection of skills in the
-              <span className="text-[#787878]"> web development </span>
-              department +
-              <span className="text-[#787878]"> dystributed systems </span>
-              tools and knowledge applied to micro-frondends.
-            </p>
-          </div>
-          <div>
-            <div className="grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 text-xs sm:text-base cursor-pointer">
-              {data.skills.map((skill: Skill, index) => {
-                return (
-                  <div
-                    key={index}
-                    onClick={() => {
-                      setModalInfo(skill);
-                      setOpenModal(true);
-                      window.document.body.style.backgroundColor =
-                        "rgba(0, 0, 0, 0.1)";
-                    }}
-                    className={`
+      <section className="pt-8 pb-18 md:pt-6 md:pb-32 md:flex justify-between gap-12">
+        <div className="md:max-w-32">
+          <h1 className="pt-6 text-3xl font-bold">LOOK THOUGH</h1>
+          <p className="py-4">
+            Technologies I have worked closely with, for work or for personal
+            projects.
+          </p>
+          <p>
+            Collection of skills in the
+            <span className="text-[#787878]"> web development </span>
+            department +
+            <span className="text-[#787878]"> dystributed systems </span>
+            tools and knowledge applied to micro-frondends.
+          </p>
+        </div>
+        <div>
+          <div className="grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 text-xs sm:text-base cursor-pointer">
+            {data.skills.map((skill: Skill, index) => {
+              return (
+                <div
+                  key={index}
+                  onClick={() => {
+                    setModalInfo(skill);
+                    setOpenModal(true);
+                    window.document.body.style.backgroundColor =
+                      "rgba(0, 0, 0, 0.1)";
+                  }}
+                  className={`
                       ${sizing[skill.importance]}
                       text-[#787878]
                       relative flex flex-col justify-center items-center`}
-                  >
-                    <motion.img
-                      initial="initial"
-                      animate="animate"
-                      variants={{
-                        initial: { y: "0px" },
-                        animate: {
-                          y: "10px",
-                          transition: {
-                            repeat: Infinity,
-                            repeatType: "mirror",
-                            duration: 1.8,
-                            ease: easeInOut,
-                            delay: index * 0.35,
-                          },
+                >
+                  <motion.img
+                    initial="initial"
+                    animate="animate"
+                    variants={{
+                      initial: { y: "0px" },
+                      animate: {
+                        y: "10px",
+                        transition: {
+                          repeat: Infinity,
+                          repeatType: "mirror",
+                          duration: 1.8,
+                          ease: easeInOut,
+                          delay: index * 0.35,
                         },
-                      }}
-                      src="src\assets\drop.png"
-                      width="100%"
-                    ></motion.img>
-                    <div className="text-center">
-                      {skill.skill.toLocaleUpperCase()}
-                    </div>
-                    <div>+</div>
+                      },
+                    }}
+                    src="src\assets\drop.png"
+                    width="100%"
+                  ></motion.img>
+                  <div className="text-center">
+                    {skill.skill.toLocaleUpperCase()}
                   </div>
-                );
-              })}
-            </div>
+                  <div>+</div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
-      <section>
-        <h2 className="md:flex flex-col text-3xl font-bold">
-          <span>PROFESSIONAL</span> <span>EXPERIENCE</span>
-        </h2>
-        <p className="pt-4 pb-12">
-          Experienced in architecting, building, and maintaining frontend
-          distributed systems in complex banking environments
-        </p>
-        <div className="sm:flex justify-around pb-32">
+      <section className="pt-8 pb-18 md:pt-6 md:pb-32 md:flex justify-between gap-12">
+        <div className="md:max-w-32">
+          <h2 className="md:flex flex-col text-3xl font-bold">
+            <span>WORK</span> <span>HISTORY</span>
+          </h2>
+          <p className="pt-4 pb-12">
+            Experienced in architecting, building, and maintaining frontend
+            distributed systems in complex banking environments
+          </p>
+        </div>
+        <div className="flex flex-col sm:flex-row items-center pb-32 gap-[10%]">
           <motion.div
             initial="initial"
             whileInView="animate"
@@ -123,7 +123,7 @@ const SkillsShowcase = () => {
                 },
               },
             }}
-            className="basis-1/3 pb-12"
+            className="max-w-96 pb-12 sm:pb-0"
           >
             <div className="pb-2">
               <img
@@ -157,7 +157,7 @@ const SkillsShowcase = () => {
                 },
               },
             }}
-            className="basis-1/3"
+            className="max-w-96"
           >
             <div className="pb-2">
               <img
