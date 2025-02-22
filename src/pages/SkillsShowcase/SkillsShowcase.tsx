@@ -181,6 +181,18 @@ const SkillsShowcase = () => {
           </motion.div>
         </div>
       </section>
+      <footer className="flex justify-end gap-4 pb-16">
+        <button className="hover:opacity-70">
+          <a href="https://www.linkedin.com/in/cristina-zlatov/" target="blank">
+            linkedin
+          </a>
+        </button>
+        <button className="hover:opacity-70">
+          <a href="https://github.com/C-ZLTV" target="blank">
+            github
+          </a>
+        </button>
+      </footer>
     </Container>
   );
 };
