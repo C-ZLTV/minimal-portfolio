@@ -16,7 +16,7 @@ const SkillsShowcase = () => {
   };
 
   return (
-    <Container size="9">
+    <Container>
       {openModal && (
         <div className="absolute top-[50%] left-[50%] z-[99] transform -translate-x-1/2 -translate-y-1/2 bg-[#fbfbfbff] p-6">
           <div>{modalInfo?.skill.toUpperCase()}</div>
@@ -36,7 +36,7 @@ const SkillsShowcase = () => {
           </button>
         </div>
       )}
-      <section className="pt-8 pb-18 md:pt-6 md:pb-32 md:flex justify-between gap-12">
+      <section className="pt-8 pb-18 md:pt-6 md:pb-32 md:flex justify-around gap-12">
         <div className="md:max-w-32">
           <h1 className="pt-6 text-3xl font-bold">LOOK THOUGH</h1>
           <p className="py-4">
@@ -64,7 +64,7 @@ const SkillsShowcase = () => {
                       "rgba(0, 0, 0, 0.1)";
                   }}
                   className={`
-                      ${sizing[skill.importance]}
+                      max-w-28
                       text-[#787878]
                       relative flex flex-col justify-center items-center hover:text-[#3d3d3d] transition-all`}
                 >
@@ -85,8 +85,10 @@ const SkillsShowcase = () => {
                       },
                     }}
                     src="src\assets\drop.png"
-                    width="100%"
-                    className="hover:scale-120 transition-all"
+                    // width={`${sizing[skill.importance]}`}
+                    className={`hover:scale-120 transition-all ${
+                      sizing[skill.importance]
+                    }`}
                   ></motion.img>
                   <div className="text-center">
                     {skill.skill.toLocaleUpperCase()}
@@ -98,7 +100,7 @@ const SkillsShowcase = () => {
           </div>
         </div>
       </section>
-      <section className="pt-8 pb-18 md:pt-6 md:pb-32 md:flex justify-between gap-12">
+      <section className="pt-8 pb-18 md:pt-6 md:pb-32 md:flex justify-around gap-12">
         <div className="md:max-w-32">
           <h2 className="md:flex flex-col text-3xl font-bold">
             <span>WORK</span> <span>HISTORY</span>
