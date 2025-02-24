@@ -4,10 +4,13 @@ import data from "../../utils/skills.json";
 import { Skill } from "../../utils/interfaces";
 
 import { easeInOut, motion } from "motion/react";
+import { useNavigate } from "react-router-dom";
 
 const SkillsShowcase = () => {
   const [openModal, setOpenModal] = useState(false);
   const [modalInfo, setModalInfo] = useState<Skill>();
+
+  const navigate = useNavigate();
 
   const sizing: Record<number, string> = {
     1: "max-w-28",
@@ -36,6 +39,25 @@ const SkillsShowcase = () => {
   return (
     <>
       <Container>
+        <button
+          className="absolute p-6 pl-0 cursor-pointer"
+          onClick={() => navigate("/")}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            className="lucide lucide-chevron-left"
+          >
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+        </button>
         {openModal && (
           <div className="absolute top-[50%] left-[50%] z-[99] transform -translate-x-1/2 -translate-y-1/2 bg-[#fbfbfbff] p-6">
             <div>{modalInfo?.skill.toUpperCase()}</div>
