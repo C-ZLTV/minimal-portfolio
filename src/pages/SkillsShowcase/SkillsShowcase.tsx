@@ -4,7 +4,6 @@ import data from "../../utils/skills.json";
 import { Skill } from "../../utils/interfaces";
 
 import { easeInOut, motion } from "motion/react";
-import ContactForm from "../../components/ContactForm/ContactForm";
 
 const SkillsShowcase = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -187,26 +186,23 @@ const SkillsShowcase = () => {
       <footer className="py-32 bg-[#3d3d3d] text-[#fbfbfbff] font-mono">
         <Container>
           <div className="sm:flex justify-around">
-            <div>
-              <div>Z.</div>
-              <div className="flex gap-4">
-                <button className="hover:opacity-70">
-                  <a
-                    href="https://www.linkedin.com/in/cristina-zlatov/"
-                    target="blank"
-                  >
-                    linkedin
-                  </a>
-                </button>
-                <button className="hover:opacity-70">
-                  <a href="https://github.com/C-ZLTV" target="blank">
-                    github
-                  </a>
-                </button>
-              </div>
-              <div>©2025 Cristina Zlatov</div>
+            <div>Z.</div>
+            <div className="flex gap-4">
+              <button className="hover:opacity-70">
+                <a
+                  href="https://www.linkedin.com/in/cristina-zlatov/"
+                  target="blank"
+                >
+                  linkedin
+                </a>
+              </button>
+              <button className="hover:opacity-70">
+                <a href="https://github.com/C-ZLTV" target="blank">
+                  github
+                </a>
+              </button>
             </div>
-            <ContactForm />
+            <div>©2025 Cristina Zlatov</div>
           </div>
         </Container>
       </footer>
