@@ -15,6 +15,24 @@ const SkillsShowcase = () => {
     3: "max-w-12",
   };
 
+  //DECODE EMAIL
+  const encodedEmail = "pevfgvanmygi.qri@tznvy.pbz"; // ROT13 of yourname@example.com
+
+  const decodeEmail = (encoded: string) => {
+    return encoded.replace(/[a-zA-Z]/g, (c) =>
+      String.fromCharCode(c.charCodeAt(0) + (c.toLowerCase() < "n" ? 13 : -13))
+    );
+  };
+
+  const handleContactClick = () => {
+    const email = decodeEmail(encodedEmail);
+    console.log(email);
+    window.location.href = `mailto:${email}`;
+  };
+
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <>
       <Container>
@@ -111,7 +129,7 @@ const SkillsShowcase = () => {
               distributed systems in complex banking environments
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row items-center pb-32 gap-[10%]">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-[10%]">
             <motion.div
               initial="initial"
               whileInView="animate"
@@ -183,26 +201,41 @@ const SkillsShowcase = () => {
           </div>
         </section>
       </Container>
-      <footer className="py-32 bg-[#3d3d3d] text-[#fbfbfbff] font-mono">
+      <footer className="py-8 bg-[#3d3d3d] text-[#fbfbfbff] font-mono">
         <Container>
-          <div className="sm:flex justify-around">
-            <div>Z.</div>
-            <div className="flex gap-4">
-              <button className="hover:opacity-70">
+          <div className="flex flex-col items-end gap-16 text-left pr-[10%] sm:pr-[5%]">
+            <div className="flex flex-col items-end sm:flex-row gap-12">
+              <button className="hover:opacity-70 transition-all ease-in">
                 <a
                   href="https://www.linkedin.com/in/cristina-zlatov/"
                   target="blank"
+                  className="relative"
                 >
-                  linkedin
+                  LINKEDIN
+                  <span className="absolute left-[-18px] text-xs">01</span>
                 </a>
               </button>
-              <button className="hover:opacity-70">
-                <a href="https://github.com/C-ZLTV" target="blank">
-                  github
+              <button className="hover:opacity-70 transition-all ease-in relative">
+                <a
+                  href="https://github.com/C-ZLTV"
+                  target="blank"
+                  className="relative"
+                >
+                  GITHUB
+                  <span className="absolute left-[-18px] text-xs">02</span>
                 </a>
+              </button>
+              <button
+                onClick={handleContactClick}
+                className="cursor-pointer hover:opacity-70 transition-all ease-in relative"
+              >
+                CONTACT ME
+                <span className="absolute left-[-18px] text-xs">03</span>
               </button>
             </div>
-            <div>©2025 Cristina Zlatov</div>
+            <div className="text-xs text-right sm:flex gap-2">
+              ©{year} Cristina Zlatov
+            </div>
           </div>
         </Container>
       </footer>
