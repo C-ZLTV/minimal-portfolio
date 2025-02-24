@@ -156,11 +156,11 @@ const SkillsShowcase = () => {
                 ></img>
               </div>
               <div>
-                <div>BUSINESS PROJECT LEAD</div>
-                <div>2022 - 2023</div>
+                <div>WEB DEVELOPER IN FINTECH</div>
+                <div>2023 - current</div>
                 <div className="text-xs">
-                  cross-functional teams leadership, client communications,
-                  strategy, budgeting
+                  performance, accessibility, scalable and modular
+                  micro-frontend architectures
                 </div>
               </div>
             </motion.div>
@@ -179,7 +179,7 @@ const SkillsShowcase = () => {
                   },
                 },
               }}
-              className="max-w-96"
+              className="max-w-96 pb-12 sm:pb-0 grayscale"
             >
               <div className="pb-2">
                 <img
@@ -190,11 +190,11 @@ const SkillsShowcase = () => {
                 ></img>
               </div>
               <div>
-                <div>WEB DEVELOPER IN FINTECH</div>
-                <div>2023 - current</div>
+                <div>BUSINESS PROJECT LEAD</div>
+                <div>2022 - 2023</div>
                 <div className="text-xs">
-                  performance, accessibility, scalable and modular
-                  micro-frontend architectures
+                  cross-functional teams leadership, client communications,
+                  strategy, budgeting
                 </div>
               </div>
             </motion.div>
