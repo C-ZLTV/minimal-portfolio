@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Hero />} />
-        <Route path="/skills" element={<SkillsShowcase />} />
+        <Route path="/experience" element={<SkillsShowcase />} />
       </Routes>
     </BrowserRouter>
   );

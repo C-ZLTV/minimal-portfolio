@@ -31,11 +31,11 @@ const Hero = () => {
     );
     animate(
       "svg",
-      { x: "7px" },
+      { x: "4px" },
       {
         repeat: Infinity,
         repeatType: "mirror",
-        duration: 0.5,
+        duration: 0.4,
         ease: easeInOut,
         delay: 2.5,
       }
@@ -77,8 +77,9 @@ const Hero = () => {
               Y/EXP<span className="pl-12">2+</span>
             </div>
             <button
-              onClick={() => navigate("/skills")}
-              className="text-[#297349] flex items-center button blur-xs hover:text-[#787878] cursor-pointer transition-all duration-150 ease-in-out py-12"
+              //#297349
+              onClick={() => navigate("/experience")}
+              className="text-[#1e5a37] flex items-center button blur-xs hover:text-[#787878] cursor-pointer transition-all duration-150 ease-in-out py-12"
             >
               LEARN MORE
               <svg
