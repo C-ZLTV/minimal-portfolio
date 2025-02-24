@@ -59,7 +59,7 @@ const SkillsShowcase = () => {
           </svg>
         </button>
         {openModal && (
-          <div className="absolute top-[50%] left-[50%] z-[99] transform -translate-x-1/2 -translate-y-1/2 bg-[#fbfbfbff] p-6">
+          <div className="absolute top-[50%] left-[50%] z-[99] transform -translate-x-1/2 -translate-y-1/2 bg-[#fbfbfbff] p-6 pb-2 w-[100%] max-w-[450px]">
             <div>{modalInfo?.skill.toUpperCase()}</div>
             <div>- {modalInfo?.category}</div>
             <div>
@@ -67,7 +67,7 @@ const SkillsShowcase = () => {
             </div>
             {modalInfo?.builyWith && <div>- helped build this website</div>}
             <button
-              className="cursor-pointer bg-red-200 ml-[85%]"
+              className="cursor-pointer ml-[85%] p-2"
               onClick={() => {
                 setOpenModal(false);
                 window.document.body.style.backgroundColor = "#fbfbfbff";
