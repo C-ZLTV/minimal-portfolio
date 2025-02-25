@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import dropImage from "../../assets/drop.png";
-import motherboardImage from "../../assets/motherboard-scaled.png";
+import motherboardImage from "../../assets/motherboard.png";
 
 const SkillsShowcase = () => {
   const [openModal, setOpenModal] = useState(false);
