@@ -70,7 +70,7 @@ const Hero = () => {
       </Helmet>
       <Container>
         <div className="pt-4 md:pt-0 flex flex-col sm:flex-row items-center justify-around min-h-dvh gap-6">
-          <section className="sm:basis-1/3 max-w-[60%]">
+          <section className="sm:basis-1/3 max-w-[80%]">
             <motion.img
               initial="initial"
               animate="animate"
