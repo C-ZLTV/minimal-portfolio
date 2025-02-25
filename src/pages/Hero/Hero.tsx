@@ -4,6 +4,7 @@ import { stagger, motion } from "motion/react";
 import { animate, easeInOut } from "motion";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import gameboyImage from "../../assets/gameboy-no-bg.png";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -76,7 +77,7 @@ const Hero = () => {
               variants={variants}
               className=" gameboy sm:w-[80%]"
               loading="lazy"
-              src="../../assets/gameboy-no-bg.png"
+              src={gameboyImage}
               alt="computer"
             />
           </section>

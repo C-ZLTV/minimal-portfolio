@@ -7,6 +7,9 @@ import { easeInOut, motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
+import dropImage from "../../assets/drop.png";
+import motherboardImage from "../../assets/motherboard-scaled.png";
+
 const SkillsShowcase = () => {
   const [openModal, setOpenModal] = useState(false);
   const [modalInfo, setModalInfo] = useState<Skill>();
@@ -137,7 +140,7 @@ const SkillsShowcase = () => {
                           },
                         },
                       }}
-                      src="../../assets/drop.png"
+                      src={dropImage}
                       // width={`${sizing[skill.importance]}`}
                       className={`hover:scale-120 transition-all ${
                         sizing[skill.importance]
@@ -184,7 +187,7 @@ const SkillsShowcase = () => {
               <div className="pb-2">
                 <img
                   className="rounded-sm"
-                  src="../../assets/motherboard-scaled.PNG"
+                  src={motherboardImage}
                   width="100%"
                   loading="lazy"
                 ></img>
@@ -218,7 +221,7 @@ const SkillsShowcase = () => {
               <div className="pb-2">
                 <img
                   className="rounded-sm"
-                  src="../../assets/motherboard-scaled.PNG"
+                  src={motherboardImage}
                   width="100%"
                   loading="lazy"
                 ></img>
