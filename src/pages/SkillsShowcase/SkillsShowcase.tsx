@@ -5,6 +5,7 @@ import { Skill } from "../../utils/interfaces";
 
 import { easeInOut, motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const SkillsShowcase = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -38,6 +39,17 @@ const SkillsShowcase = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Cristina Zlatov Portfolio</title>
+        <meta
+          name="Cristina Zlatov Web Developer"
+          content="Cristina Zlatov | Specializing in React, modern web development and dystributed systems"
+        />
+        <meta
+          name="Cristina Zlatov Frontend Develper"
+          content="Cristina Zlatov, Web Developer, React, Portfolio, Frontend, Distributed Systems, Front-end"
+        />
+      </Helmet>
       <Container>
         <button
           className="absolute p-6 pl-0 cursor-pointer"
