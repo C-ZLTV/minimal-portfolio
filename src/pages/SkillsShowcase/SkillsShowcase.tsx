@@ -137,7 +137,7 @@ const SkillsShowcase = () => {
                           },
                         },
                       }}
-                      src="src\assets\drop.png"
+                      src="../../assets/drop.png"
                       // width={`${sizing[skill.importance]}`}
                       className={`hover:scale-120 transition-all ${
                         sizing[skill.importance]
@@ -184,7 +184,7 @@ const SkillsShowcase = () => {
               <div className="pb-2">
                 <img
                   className="rounded-sm"
-                  src="src\assets\motherboard-scaled.PNG"
+                  src="../../assets/motherboard-scaled.PNG"
                   width="100%"
                   loading="lazy"
                 ></img>
@@ -218,7 +218,7 @@ const SkillsShowcase = () => {
               <div className="pb-2">
                 <img
                   className="rounded-sm"
-                  src="src\assets\motherboard-scaled.PNG"
+                  src="../../assets/motherboard-scaled.PNG"
                   width="100%"
                   loading="lazy"
                 ></img>

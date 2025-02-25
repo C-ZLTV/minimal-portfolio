@@ -76,7 +76,7 @@ const Hero = () => {
               variants={variants}
               className=" gameboy sm:w-[80%]"
               loading="lazy"
-              src="src\assets\gameboy-no-bg.png"
+              src="../../assets/gameboy-no-bg.png"
               alt="computer"
             />
           </section>
