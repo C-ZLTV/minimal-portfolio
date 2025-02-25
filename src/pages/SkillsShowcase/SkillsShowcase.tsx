@@ -93,7 +93,7 @@ const SkillsShowcase = () => {
           </div>
         )}
         <section className="pt-8 pb-18 md:pt-6 md:pb-32 md:flex justify-around gap-12">
-          <div className="md:max-w-32">
+          <div className="md:max-w-32 pb-8">
             <h1 className="pt-6 text-3xl font-bold">LOOK THROUGH</h1>
             <p className="py-4">
               Technologies I have worked closely with, for work or for personal
