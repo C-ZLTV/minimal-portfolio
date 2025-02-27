@@ -4,7 +4,7 @@ import { stagger, motion } from "motion/react";
 import { animate, easeInOut } from "motion";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import gameboyImage from "../../assets/gameboy-no-bg.png";
+import gameboyImage from "../../assets/gameboy-no-bg.webp";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -103,9 +103,9 @@ const Hero = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="lucide lucide-chevrons-left"
                 >
                   <path d="m11 17-5-5 5-5" />
