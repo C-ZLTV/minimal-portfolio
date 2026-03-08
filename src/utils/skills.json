@@ -6,23 +6,26 @@
       "acquisitionMethod": "work",
       "builyWith": true,
       "category": "frontend framework",
-      "importance": 1
+      "importance": 1,
+      "description": "Daily development of production features in a React-based microfrontend architecture. Building reusable components, managing UI state and implementing complex flows within a large enterprise frontend used in the banking sector."
     },
     {
-      "skill": "TS",
+      "skill": "TypeScript",
       "id": "002",
       "acquisitionMethod": "work",
       "builyWith": true,
       "category": "programming language",
-      "importance": 1
+      "importance": 1,
+      "description": "Using TypeScript across the frontend codebase to enforce type safety and improve maintainability. Writing typed components, utilities and API integrations while collaborating within a large shared codebase."
     },
     {
-      "skill": "JS",
+      "skill": "JavaScript",
       "id": "003",
       "acquisitionMethod": "work",
       "builyWith": true,
       "category": "programming language",
-      "importance": 1
+      "importance": 1,
+      "description": "Strong foundation in modern JavaScript (ES6+). Used daily to implement application logic, asynchronous operations, API communication and complex UI behaviour in production frontend applications."
     },
     {
       "skill": "Microfrontends",
@@ -30,7 +33,8 @@
       "acquisitionMethod": "work",
       "builyWith": false,
       "category": "architecture",
-      "importance": 1
+      "importance": 1,
+      "description": "Working within a microfrontend architecture where multiple teams develop independent frontend modules integrated into a shared platform. Experience navigating distributed codebases and shared dependencies."
     },
     {
       "skill": "Redux",
@@ -38,7 +42,8 @@
       "acquisitionMethod": "work",
       "builyWith": false,
       "category": "state management",
-      "importance": 1
+      "importance": 1,
+      "description": "Managing global application state for complex frontend flows using Redux. Implementing reducers, actions and selectors while maintaining predictable and scalable state management."
     },
     {
       "skill": "Storybook",
@@ -46,7 +51,8 @@
       "acquisitionMethod": "work",
       "builyWith": false,
       "category": "component development",
-      "importance": 1
+      "importance": 1,
+      "description": "Using Storybook to build and document reusable UI components in isolation. Helps standardize components, test different visual states and support collaboration across teams."
     },
     {
       "skill": "Jest",
@@ -54,7 +60,8 @@
       "acquisitionMethod": "work",
       "builyWith": false,
       "category": "testing",
-      "importance": 2
+      "importance": 2,
+      "description": "Writing unit and component tests using Jest to validate frontend logic and component behaviour. Focus on preventing regressions and ensuring reliability of production features."
     },
     {
       "skill": "Ant Design",
@@ -62,7 +69,8 @@
       "acquisitionMethod": "work",
       "builyWith": false,
       "category": "ui framework",
-      "importance": 2
+      "importance": 2,
+      "description": "Building enterprise user interfaces using the Ant Design component library. Customizing components and integrating them into larger application flows."
     },
     {
       "skill": "Tailwind CSS",
@@ -70,7 +78,8 @@
       "acquisitionMethod": "personal projects",
       "builyWith": true,
       "category": "css framework",
-      "importance": 2
+      "importance": 2,
+      "description": "Used in personal projects to rapidly build responsive interfaces. Helps prototype layouts efficiently while keeping styles consistent and easy to maintain."
     },
     {
       "skill": "Axios",
@@ -78,7 +87,8 @@
       "acquisitionMethod": "work",
       "builyWith": false,
       "category": "http client",
-      "importance": 2
+      "importance": 2,
+      "description": "Handling API communication between frontend and backend services using Axios. Managing request flows, error handling and integrating REST endpoints into application logic."
     },
     {
       "skill": "REST APIs",
@@ -86,15 +96,17 @@
       "acquisitionMethod": "work",
       "builyWith": false,
       "category": "api integration",
-      "importance": 3
+      "importance": 3,
+      "description": "Regular integration with backend REST services. Implementing data fetching, managing asynchronous flows and handling API responses in complex frontend applications."
     },
     {
-      "skill": "Git & GitHub ",
+      "skill": "Git & GitHub",
       "id": "012",
       "acquisitionMethod": "work",
       "builyWith": true,
       "category": "version control & collaboration platform",
-      "importance": 3
+      "importance": 3,
+      "description": "Daily use of Git for version control and collaboration. Managing branches, pull requests, code reviews and maintaining a clean commit history."
     },
     {
       "skill": "Jira",
@@ -102,7 +114,8 @@
       "acquisitionMethod": "work",
       "builyWith": false,
       "category": "project management tool",
-      "importance": 3
+      "importance": 3,
+      "description": "Tracking development tasks and managing tickets within an agile workflow. Used daily to organize work, follow sprint progress and collaborate with the team."
     },
     {
       "skill": "Confluence",
@@ -110,7 +123,8 @@
       "acquisitionMethod": "work",
       "builyWith": false,
       "category": "documentation tool",
-      "importance": 3
+      "importance": 3,
+      "description": "Consulting and contributing to internal documentation including development guidelines, architecture notes and project knowledge sharing."
     },
     {
       "skill": "CI/CD",
@@ -118,7 +132,8 @@
       "acquisitionMethod": "work",
       "builyWith": false,
       "category": "devops practice",
-      "importance": 2
+      "importance": 2,
+      "description": "Working within automated CI/CD pipelines used to build, test and deploy frontend applications in a large enterprise environment."
     },
     {
       "skill": "Jenkins",
@@ -126,7 +141,8 @@
       "acquisitionMethod": "work",
       "builyWith": false,
       "category": "ci/cd tool",
-      "importance": 3
+      "importance": 3,
+      "description": "Using Jenkins pipelines as part of the team deployment workflow. Familiar with automated builds, test execution and release processes."
     },
     {
       "skill": "Accessibility (a11y)",
@@ -134,7 +150,8 @@
       "acquisitionMethod": "work",
       "builyWith": true,
       "category": "web standards",
-      "importance": 2
+      "importance": 2,
+      "description": "Implementing accessible UI patterns following web accessibility guidelines. Ensuring components support keyboard navigation and screen reader compatibility."
     },
     {
       "skill": "GCP",
@@ -142,7 +159,8 @@
       "acquisitionMethod": "work",
       "builyWith": false,
       "category": "cloud platform",
-      "importance": 3
+      "importance": 3,
+      "description": "Exposure to Google Cloud Platform through the infrastructure used by the project. Familiar with how frontend services operate within cloud-hosted environments."
     },
     {
       "skill": "Kubernetes",
@@ -150,7 +168,8 @@
       "acquisitionMethod": "work",
       "builyWith": false,
       "category": "container orchestration",
-      "importance": 3
+      "importance": 3,
+      "description": "Basic understanding of how applications are deployed and managed within Kubernetes clusters as part of the broader platform infrastructure."
     },
     {
       "skill": "Framer Motion",
@@ -158,7 +177,8 @@
       "acquisitionMethod": "work",
       "builyWith": true,
       "category": "animation library",
-      "importance": 3
+      "importance": 3,
+      "description": "Using Framer Motion to implement UI animations and transitions that improve user experience, mainly in personal or experimental frontend projects."
     }
   ]
 }

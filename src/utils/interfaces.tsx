@@ -5,6 +5,7 @@ interface Skill {
   builyWith: boolean;
   category: string;
   importance: number;
+  description: string;
 }
 
 export type { Skill };
