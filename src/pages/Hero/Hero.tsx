@@ -19,17 +19,17 @@ const Hero = () => {
         duration: 2,
         ease: easeInOut,
         delay: 2,
-      }
+      },
     );
     animate(
       ".text",
       { y: "-10px", opacity: 1 },
-      { delay: stagger(0.4), ease: "easeOut", duration: 0.4 }
+      { delay: stagger(0.4), ease: "easeOut", duration: 0.4 },
     );
     animate(
       ".button",
       { filter: ["blur(4px)", "blur(0px)"] },
-      { delay: 2, ease: "easeOut", duration: 0.5 }
+      { delay: 2, ease: "easeOut", duration: 0.5 },
     );
     animate(
       "svg",
@@ -40,7 +40,7 @@ const Hero = () => {
         duration: 0.4,
         ease: easeInOut,
         delay: 2.5,
-      }
+      },
     );
   }, []);
 
@@ -69,8 +69,8 @@ const Hero = () => {
         />
       </Helmet>
       <Container>
-        <div className="pt-4 md:pt-0 flex flex-col sm:flex-row items-center justify-around min-h-dvh gap-6">
-          <section className="sm:basis-1/3 max-w-[80%]">
+        <div className="pt-6 md:pt-0 flex flex-col sm:flex-row items-center justify-around min-h-dvh gap-8 sm:gap-6">
+          <section className="sm:basis-1/3 max-w-[70%]">
             <motion.img
               initial="initial"
               animate="animate"
@@ -85,7 +85,7 @@ const Hero = () => {
             <div>
               <div className="text opacity-0">CRISTINA</div>
               <div className="text opacity-0">ZLATOV</div>
-              <div className="text opacity-0">/WEB DEVELOPER/</div>
+              <div className="text opacity-0">/FRONTEND DEVELOPER/</div>
               <div className="text opacity-0">MI, ITALY</div>
               <div className="text opacity-0">
                 Y/EXP<span className="pl-12">2+</span>
@@ -95,7 +95,7 @@ const Hero = () => {
                 onClick={() => navigate("/experience")}
                 className="text-[#1e5a37] flex items-center button blur-xs hover:text-[#787878] cursor-pointer transition-all duration-150 ease-in-out py-12"
               >
-                LEARN MORE
+                EXPLORE
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"

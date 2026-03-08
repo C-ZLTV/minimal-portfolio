@@ -9,10 +9,12 @@ import { Helmet } from "react-helmet";
 
 import dropImage from "../../assets/drop.png";
 import motherboardImage from "../../assets/motherboard-square.webp";
+import Modal from "../../components/Modal/Modal";
+import { useState } from "react";
 
 const SkillsShowcase = () => {
-  // const [openModal, setOpenModal] = useState(false);
-  // const [modalInfo, setModalInfo] = useState<Skill>();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalInfo, setModalInfo] = useState<Skill>();
 
   const navigate = useNavigate();
 
@@ -27,7 +29,7 @@ const SkillsShowcase = () => {
 
   const decodeEmail = (encoded: string) => {
     return encoded.replace(/[a-zA-Z]/g, (c) =>
-      String.fromCharCode(c.charCodeAt(0) + (c.toLowerCase() < "n" ? 13 : -13))
+      String.fromCharCode(c.charCodeAt(0) + (c.toLowerCase() < "n" ? 13 : -13)),
     );
   };
 
@@ -35,6 +37,11 @@ const SkillsShowcase = () => {
     const email = decodeEmail(encodedEmail);
     console.log(email);
     window.location.href = `mailto:${email}`;
+  };
+
+  const handleOpenModal = (skill: Skill) => {
+    setIsModalOpen(true);
+    setModalInfo(skill);
   };
 
   const date = new Date();
@@ -54,6 +61,18 @@ const SkillsShowcase = () => {
         />
       </Helmet>
       <Container>
+        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+          <>
+            <h2 className="text-lg sm:text-xl font-semibold mb-4">
+              {modalInfo?.skill.toUpperCase()}
+            </h2>
+            <div>- {modalInfo?.category}</div>
+            <div>
+              - acquired this skill through: {modalInfo?.acquisitionMethod}
+            </div>
+            {modalInfo?.builyWith && <div>- helped build this website</div>}
+          </>
+        </Modal>
         <button
           className="absolute p-6 pl-0 cursor-pointer"
           onClick={() => navigate("/")}
@@ -73,25 +92,6 @@ const SkillsShowcase = () => {
             <path d="m15 18-6-6 6-6" />
           </svg>
         </button>
-        {/* {openModal && (
-          <div className="absolute top-[50%] left-[50%] z-[99] transform -translate-x-1/2 -translate-y-1/2 bg-[#fbfbfbff] p-6 pb-2 w-[100%] max-w-[450px]">
-            <div>{modalInfo?.skill.toUpperCase()}</div>
-            <div>- {modalInfo?.category}</div>
-            <div>
-              - acquired this skill through: {modalInfo?.acquisitionMethod}
-            </div>
-            {modalInfo?.builyWith && <div>- helped build this website</div>}
-            <button
-              className="cursor-pointer ml-[85%] p-2"
-              onClick={() => {
-                setOpenModal(false);
-                window.document.body.style.backgroundColor = "#fbfbfbff";
-              }}
-            >
-              close
-            </button>
-          </div>
-        )} */}
         <section className="pt-8 pb-18 md:pt-6 md:pb-32 md:flex justify-around gap-12">
           <div className="md:max-w-32 pb-8">
             <h1 className="pt-6 text-3xl font-bold">LOOK THROUGH</h1>
@@ -113,12 +113,7 @@ const SkillsShowcase = () => {
                 return (
                   <div
                     key={index}
-                    // onClick={() => {
-                    //   setModalInfo(skill);
-                    //   setOpenModal(true);
-                    //   window.document.body.style.backgroundColor =
-                    //     "rgba(0, 0, 0, 0.1)";
-                    // }}
+                    onClick={() => handleOpenModal(skill)}
                     className={`
                         max-w-28
                         text-[#787878]
