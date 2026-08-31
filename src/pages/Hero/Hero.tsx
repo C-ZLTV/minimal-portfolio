@@ -88,7 +88,7 @@ const Hero = () => {
               <div className="text opacity-0">/FRONTEND DEVELOPER/</div>
               <div className="text opacity-0">MI, ITALY</div>
               <div className="text opacity-0">
-                Y/EXP<span className="pl-12">2+</span>
+                Y/EXP<span className="pl-12">3+</span>
               </div>
               <button
                 //#297349
